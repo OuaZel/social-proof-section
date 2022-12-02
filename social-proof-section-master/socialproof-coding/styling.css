@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=League Spartan");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 80px 100px;
+    font-family: "League Spartan", sans-serif;
+    background-image: url("data:image/svg+xml,%3Csvg width='1085' height='673' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient x1='100%25' y1='69.237%25' x2='9.399%25' y2='32.159%25' id='a'%3E%3Cstop stop-color='%238A4389' stop-opacity='0' offset='0%25'/%3E%3Cstop stop-color='%23512051' offset='100%25'/%3E%3Cstop stop-color='%23512051' offset='100%25'/%3E%3Cstop stop-color='%23512051' offset='100%25'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M355 800c74.356-153.934 215.022-251.268 422-292 310.466-61.099 192.94-122.724 345.47-245.025C1224.157 181.442 1330 136.116 1440 127v673H355z' transform='translate(-355 -127)' fill='url(%23a)' fill-rule='evenodd' opacity='.05'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg width='584' height='362' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient x1='100%25' y1='69.212%25' x2='9.399%25' y2='32.183%25' id='a'%3E%3Cstop stop-color='%238A4389' stop-opacity='0' offset='0%25'/%3E%3Cstop stop-color='%23512051' offset='100%25'/%3E%3Cstop stop-color='%23512051' offset='100%25'/%3E%3Cstop stop-color='%23512051' offset='100%25'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 362c40.022-82.8 115.736-135.154 227.141-157.064 167.108-32.864 103.85-66.012 185.949-131.796C467.823 29.284 524.793 4.904 584 0v362H0z' transform='rotate(180 292 181)' fill='url(%23a)' fill-rule='evenodd' opacity='.05'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+.firstrow{
+    display: flex;
+    column-gap: 10px;
+}
+.firstcolumn{
+    width: 40%;
+}
+.firstcolumn p{
+    padding-top: 20px;
+}
+.review{
+    background-color: hsl(300, 24%, 96%);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.review span:first-child{
+    padding-right: 20px;
+}
+.secondcolumn{
+    margin-left: auto;
+    padding-top: 20px;
+}
+.secondcolumn .second{
+    margin-left: -40px;
+    margin-right: 40px;
+}
+.secondcolumn .first{
+    margin-left: -80px;
+    margin-right: 80px;
+}
+.secondrow{
+    display: flex;
+    column-gap: 20px;
+    padding-top: 30px;
+}
+.info span:last-child{
+    display: block;
+    color: hsl(333, 80%, 67%);
+}
+.profile-info{
+    margin-bottom: 20px;
+}
+.info{
+    padding-top: 2px;
+}
+.profile-info::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.image1, .image2, .image3{
+    display: block;
+    width: 40px;
+    height: 40px;  
+    background-size: cover;
+    border-radius: 50%;
+    float:left;
+    margin-right: 20px;
+}
+.image1{
+    background-image: url("../social-proof-section-master/images/image-colton.jpg");
+}
+.image2{
+    background-image: url("../social-proof-section-master/images/image-irene.jpg");
+}
+.image3{
+    background-image: url("../social-proof-section-master/images/image-anne.jpg");
+}
+.social1, .social2, .social3{
+    padding: 20px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+}
+.social2{
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+.social3{
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+.info span:first-child{
+    color: white;
+}
+.profile-description{
+    color: hsl(300, 24%, 96%);
+    font-size: 12px;
+}
+.review span:last-child{
+    color: hsl(300, 43%, 22%);
+    font-size: 12px;
+    font-weight: 700;
+}
+h2{
+    color: hsl(300, 43%, 22%);
+    font-weight: 900;
+}
+.firstcolumn p{
+    color: hsl(303, 10%, 53%);
+    font-size: 14px;
+    font-weight: 600;
+}
+@media  screen and (max-width:500px) {
+    .container{
+        width: 300px;
+        height: 100%;
+        padding: 0;
+        border: 1px solid white;
+    }
+    .firstrow{
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+    .firstcolumn{
+        width: 100%;
+        text-align: center;
+    }
+    .secondcolumn{
+        width: 100%;
+        margin-right: auto;
+    }
+    .secondcolumn .first, .secondcolumn .second{
+        margin: 0 0 5px 0;
+    }
+    .review span:last-child{
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .review span:first-child{
+        padding-left: 70px;
+    }
+    .secondrow{
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+    
+}
